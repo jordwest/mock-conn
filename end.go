@@ -8,8 +8,8 @@ import (
 
 // End is one 'end' of a simulated connection.
 type End struct {
-	Reader *io.PipeReader
-	Writer *io.PipeWriter
+	Reader *io.Reader
+	Writer *io.Writer
 }
 
 func (c End) Close() error {
